@@ -3,6 +3,15 @@ React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Run nodejs container with ports open:
+
+```bash
+docker run -it --rm -v $(pwd):/src -w /src -p 3000:3000 node:23-alpine3.20 sh
+npm install
+npm run build
+npm start
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
